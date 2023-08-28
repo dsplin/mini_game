@@ -50,6 +50,7 @@ RUN docker-php-ext-configure intl --enable-intl && \
         intl iconv mbstring \
         zip pcntl \
         exif opcache \
+        pgsql \
     && docker-php-source delete
 
 # Clear cache
